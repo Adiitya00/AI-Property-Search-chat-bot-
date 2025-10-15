@@ -1,0 +1,14 @@
+# Streamlit frontend
+streamlit==1.30.0
+requests==2.32.0
+
+# Backend (FastAPI)
+fastapi==0.111.0
+uvicorn[standard]==0.23.2
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Optional extras (if needed for typing / data handling)
+pydantic==2.5.2
+typing-extensions==4.8.0
