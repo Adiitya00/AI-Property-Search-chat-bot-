@@ -412,7 +412,11 @@ async def load_data():
             
     if not found:
         print("⚠️ Data file not found. Using sample data.")
-        
+        merged_data = pd.DataFrame([{
+            'ProjectId': 1, 'Project': 'Sample Property', 'Address': 'Andheri, Mumbai',
+            'City': 'Mumbai', 'Locality': 'Andheri', 'BHK': 3,
+            'Price_INR': 12000000, 'Possession': 'Ready', 'Amenities': ['Gym', 'Parking']
+        }])
     else:
         print(f"✅ Loading data from: {found}")
         try:
